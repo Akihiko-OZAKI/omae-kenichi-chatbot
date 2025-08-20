@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大前研一に聞け - ビジネス戦略相談室 / Ask Kenichi OMAE - Business Strategy Consultation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="title-section">
+                    <h1 class="title">
+                        <span class="japanese">大前研一に聞け</span>
+                        <span class="english">Ask Kenichi OMAE</span>
+                    </h1>
+                    <p class="subtitle">
+                        <span class="japanese">ビジネス戦略相談室</span>
+                        <span class="english">Business Strategy Consultation</span>
+                    </p>
+                </div>
+            </div>
+            <div class="confidence-notice" id="confidenceNotice" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>注意: この回答の信頼度が低い可能性があります</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="chat-section">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <i class="fas fa-user-tie"></i>
+                            <div class="message-text">
+                                <p class="japanese">こんにちは！大前研一です。ビジネスやキャリアについて、何でもお聞きください。</p>
+                                <p class="english">Hello! I'm Kenichi Omae. Ask me anything about business and career.</p>
+                                <p class="examples">
+                                    <strong>Examples:</strong><br>
+                                    "Tell me about Ohmae's business philosophy" / "What is the 3C framework?" /<br>
+                                    "大前研一の経営哲学について教えて" / "3C分析について説明してください"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input">
+                    <input type="text" id="chatInput" placeholder="Ask your question... / 質問を入力してください..." maxlength="1000">
+                    <button id="sendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html> 

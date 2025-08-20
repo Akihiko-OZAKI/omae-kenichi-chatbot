@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大前研一に聞け - ビジネス戦略相談室 / Ask Kenichi OMAE - Business Strategy Consultation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/omae_style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <span class="japanese">大前研一に聞け</span>
+                <span class="english">Ask Kenichi OMAE</span>
+            </h1>
+            <p class="subtitle">
+                <span class="japanese">ビジネス戦略相談室</span>
+                <span class="english">Business Strategy Consultation</span>
+            </p>
+            <div class="confidence-notice" id="confidenceNotice" style="display: none;">
+                ⚠️ 注意: この回答の信頼度が低い可能性があります
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-message">
+                <p class="japanese">
+                    大前研一の経営哲学・ビジネス戦略について、何でもお聞きください。<br>
+                    サラリーマン戦略、キャリア開発、ビジネス戦略など、実践的なアドバイスを提供します。
+                </p>
+                <p class="english">
+                    Ask Kenichi Omae about business philosophy and strategy.<br>
+                    Get practical advice on salaryman strategy, career development, and business strategy.
+                </p>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p class="japanese">こんにちは！大前研一です。ビジネスやキャリアについて、何でもお聞きください。</p>
+                            <p class="english">Hello! I'm Kenichi Omae. Ask me anything about business and career.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-group">
+                        <input type="text" id="messageInput" placeholder="質問を入力してください / Enter your question" class="chat-input">
+                        <button id="sendButton" class="send-button">送信 / Send</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="japanese">大前研一の経営哲学に基づくビジネス戦略相談</p>
+            <p class="english">Business Strategy Consultation based on Kenichi Omae's Management Philosophy</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/omae_app.js') }}"></script>
+</body>
+</html> 
