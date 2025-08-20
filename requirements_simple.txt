@@ -1,0 +1,10 @@
+# 大前研一チャットボット 軽量化版依存関係
+# Webアプリケーション（最小限）
+Flask==2.3.3
+Werkzeug==2.3.7
+gunicorn==21.2.0
+
+# 基本ライブラリ
+python-dateutil==2.8.2
+requests==2.31.0
+python-dotenv==1.0.0
