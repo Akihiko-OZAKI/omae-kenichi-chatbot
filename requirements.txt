@@ -20,5 +20,8 @@ requests==2.31.0
 # 開発・デバッグ
 python-dotenv==1.0.0
 
+# Hugging Face Hub (バージョン固定)
+huggingface-hub==0.16.4
+
 # 本番環境用
 gunicorn==21.2.0
